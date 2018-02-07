@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a3652e4-93ee-496f-86cd-1c4ffb36cdb2" name="Default" comment="" />
+    <ignored path="app.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="app" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="279" column="91" selection-start-line="279" selection-start-column="80" selection-end-line="279" selection-end-column="91" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#13479#13485#1" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchByHashtag.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/js/searchByHashtag.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/js/app.js" />
+        <option value="$PROJECT_DIR$/pages/index.html" />
+        <option value="D:/ng-dialog.css" />
+        <option value="$PROJECT_DIR$/main/css/angular-busy.css" />
+        <option value="$PROJECT_DIR$/main/js/languageDecryption" />
+        <option value="$PROJECT_DIR$/main/pages/testPage.html" />
+        <option value="$PROJECT_DIR$/main/js/testPage.js" />
+        <option value="$PROJECT_DIR$/main/js/asd.js" />
+        <option value="$PROJECT_DIR$/main/pages/charts.html" />
+        <option value="$PROJECT_DIR$/main/css/footer-basic-centered.css" />
+        <option value="$PROJECT_DIR$/main/pages/customSearch.html" />
+        <option value="$PROJECT_DIR$/main/js/customSearch.js" />
+        <option value="$PROJECT_DIR$/main/new/js/charts.js" />
+        <option value="$PROJECT_DIR$/main/new/js/customSearch.js" />
+        <option value="$PROJECT_DIR$/main/new/js/angular-busy/ng-animate.min.js" />
+        <option value="$PROJECT_DIR$/main/new/css/app.css" />
+        <option value="$PROJECT_DIR$/main/new/js/navChanges/navChanges.js" />
+        <option value="$PROJECT_DIR$/main/new/js/app.js" />
+        <option value="$PROJECT_DIR$/main/new/js/searchByDate.js" />
+        <option value="$PROJECT_DIR$/main/new/css/template.css" />
+        <option value="$PROJECT_DIR$/main/new/js/searchByHashtag.js" />
+        <option value="$PROJECT_DIR$/main/new/index.html" />
+        <option value="$PROJECT_DIR$/main/css/app.css" />
+        <option value="$PROJECT_DIR$/main/css/ng-dialog.css" />
+        <option value="$PROJECT_DIR$/main/js/charts.js" />
+        <option value="$PROJECT_DIR$/main/js/navChanges/navChanges.js" />
+        <option value="$PROJECT_DIR$/main/js/app.js" />
+        <option value="$PROJECT_DIR$/main/css/template.css" />
+        <option value="$PROJECT_DIR$/main/index.html" />
+        <option value="$PROJECT_DIR$/main/js/searchByDate.js" />
+        <option value="$PROJECT_DIR$/main/js/searchByHashtag.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Capstone-Project-Git\src\main\webapp\app\main\new\js\angular-busy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a3652e4-93ee-496f-86cd-1c4ffb36cdb2" name="Default" comment="" />
+      <created>1472555182875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1472555182875</updated>
+      <workItem from="1472555186292" duration="5079000" />
+      <workItem from="1472632227162" duration="1727000" />
+      <workItem from="1472660178953" duration="7587000" />
+      <workItem from="1472721345035" duration="3991000" />
+      <workItem from="1472808097938" duration="21326000" />
+      <workItem from="1472907048993" duration="73000" />
+      <workItem from="1472935317755" duration="2231000" />
+      <workItem from="1472979417231" duration="12505000" />
+      <workItem from="1473017351114" duration="4200000" />
+      <workItem from="1473066889678" duration="240000" />
+      <workItem from="1473080918973" duration="6367000" />
+      <workItem from="1473104681026" duration="4642000" />
+      <workItem from="1473163746952" duration="58000" />
+      <workItem from="1473168069876" duration="4467000" />
+      <workItem from="1473180155954" duration="1655000" />
+      <workItem from="1473190634508" duration="978000" />
+      <workItem from="1473250072989" duration="9235000" />
+      <workItem from="1473265923588" duration="2098000" />
+      <workItem from="1473284467734" duration="159000" />
+      <workItem from="1473369666476" duration="645000" />
+      <workItem from="1473434118348" duration="11122000" />
+      <workItem from="1473540361395" duration="4467000" />
+      <workItem from="1473587238252" duration="11421000" />
+      <workItem from="1473602485159" duration="3984000" />
+      <workItem from="1473618546631" duration="6072000" />
+      <workItem from="1473625874210" duration="30000" />
+      <workItem from="1476360817549" duration="1423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="127782000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main/pages/customSearch.html" />
+    <entry file="file://$PROJECT_DIR$/main/js/customSearch.js" />
+    <entry file="file://$PROJECT_DIR$/main/pages/customSearch.html" />
+    <entry file="file://$PROJECT_DIR$/main/pages/customSearch.html" />
+    <entry file="file://$PROJECT_DIR$/main/js/customSearch.js" />
+    <entry file="file://$PROJECT_DIR$/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/pages/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/pages/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/pages/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/main/css/inputFields.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/ng-dialog.css" />
+    <entry file="file://$PROJECT_DIR$/main/css/angular-busy.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/fusioncharts/fusioncharts.powercharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="280" column="253" selection-start-line="280" selection-start-column="243" selection-end-line="280" selection-end-column="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/languageDecryption" />
+    <entry file="file://$PROJECT_DIR$/main/js/testPage.js" />
+    <entry file="file://$PROJECT_DIR$/main/pages/testPage.html" />
+    <entry file="file://$PROJECT_DIR$/main/js/asd.js" />
+    <entry file="file://$PROJECT_DIR$/main/js/fusioncharts/fusioncharts.charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/angular-busy/angular-busy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/fusioncharts/fusioncharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/css/footer-basic-centered.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/customSearch.js" />
+    <entry file="file://$PROJECT_DIR$/main/pages/customSearch.html" />
+    <entry file="file://$PROJECT_DIR$/main/pages/charts.html" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/charts.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/ui scripts/smoothscroll.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/css/font-awesome.min.css" />
+    <entry file="file://$PROJECT_DIR$/main/new/ui scripts/html5shiv.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/customSearch.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/angular-busy/angular-busy.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/angular-busy/ng-animate.min.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/ui scripts/modernizr.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/smoothScroll/anchorSmoothScroll.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/css/app.css" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/navChanges/navChanges.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/css/template.css" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/searchByDate.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/js/searchByHashtag.js" />
+    <entry file="file://$PROJECT_DIR$/main/new/index.html" />
+    <entry file="file://$PROJECT_DIR$/main/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/css/ng-dialog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/navChanges/navChanges.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="727" column="50" selection-start-line="727" selection-start-column="50" selection-end-line="727" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/searchByDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="315" column="21" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="279" column="91" selection-start-line="279" selection-start-column="80" selection-end-line="279" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#13479#13485#1" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/searchByHashtag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project">
+    <meta name="author" content="Srdjan Ristic">
+    <title>Capstone Project</title>
+
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/inputFields.css">
+    <link rel="stylesheet" href="css/ng-dialog.css">
+    <link rel="stylesheet" href="css/ng-dialog-theme-default.css">
+    <link rel="stylesheet" href="css/angular-busy.css">
+    <link rel="stylesheet" href="css/gh-fork-ribbon.css">
+    <link rel="stylesheet" href="css/footer-basic-centered.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script
+            src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.3.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/gauge.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.7/go-debug.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+
+    <script type="text/javascript" src="js/angular-chart/chart.js"></script>
+    <script type="text/javascript" src="js/angular-chart/angular-chart.min.js"></script>
+    <script type="text/javascript" src="js/ng-dialog/ng-dialog.min.js"></script>
+    <script type="text/javascript" src="js/angular-busy/angular-busy.js"></script>
+    <script type="text/javascript" src="js/navChanges/navChanges.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/searchByHashtag.js"></script>
+    <script type="text/javascript" src="js/searchByDate.js"></script>
+    <script type="text/javascript" src="js/charts.js"></script>
+    <script type="text/javascript" src="js/twitterMap.js"></script>
+    <script type="text/javascript" src="js/compareHashtags.js"></script>
+    <script type="text/javascript" src="js/totalNumberOfData.js"></script>
+
+</head>
+<body ng-app="app" ng-controller="MainController">
+<header class="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 header-logo">
+                <br>
+                <a href="index.html"><img src="images/logo.png" alt="" class="img-responsive logo"></a>
+            </div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid nav-bar">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a class="menu" href="" ng-click="gotoElement('home')">Home</a></li>
+                                <li><a class="menu" href="" ng-click="gotoElement('scrollToHashtag')">Search
+                                    by hashtag</a></li>
+                                <li><a class="menu" href="" ng-click="gotoElement('scrollToDate')">Search
+                                    by date</a></li>
+                                <li><a class="menu" href="" ng-click="gotoElement('charts')">Chart</a></li>
+                                <li><a class="menu" href="" ng-click="gotoElement('scrollToMap')">Map</a></li>
+                                <li><a class="menu" href="" ng-click="gotoElement('scrollToCompareHashtags')">Compare
+                                    hashtags</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="slider" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="header-backup"></div>
+                <img style="height: 800px;width: 100%" src="images/background.jpg"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about text-center">
+    <div class="container">
+        <div class="row">
+            <h2>What do we provide</h2>
+            <h4>We provide different filters for data visualization</h4>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail clearfix">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/barDiagram.jpg" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>B</h1>
+                        </div>
+                        <h3>Bar diagram</h3>
+
+                        <p>Searching by specific hashtag, you will be able to get information represented with bar
+                            diagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/lineDiagram.jpg" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>D</h1>
+                        </div>
+
+                        <h3>Data plot diagram</h3>
+
+                        <p>Searching by specific dates, you will be able to get information represented with data plot
+                            diagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/nodeDiagram.png" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>R</h1>
+                        </div>
+                        <h3>Relation diagram</h3>
+
+                        <p>Relation diagram provides information about relationship between specific hashtags</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/pieDiagram.jpg" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1 style="top: -12%; left: 12%">C</h1>
+                        </div>
+                        <h3>Chart diagram</h3>
+
+                        <p>Chart diagram presents languages that people used while tweeting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail clearfix">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/map.png" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>M</h1>
+                        </div>
+                        <h3>World map</h3>
+
+                        <p>Map shows how many tweets were tweeted from each of the countries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-about-detail clearfix">
+                    <div class="about-img">
+                        <img class="img-responsive" src="images/comparison.png" alt="">
+                    </div>
+                    <div class="about-details">
+                        <div class="pentagon-text">
+                            <h1>T</h1>
+                        </div>
+                        <h3>Table comparison</h3>
+
+                        <p>Comparison table provides information for each of the provided hashtags</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service text-center">
+    <div class="container">
+        <div class="row">
+            <h2>Technologies we use</h2>
+            <h4>All these technologies work together to give you the best of our services</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <a href="http://html.com/" target="_blank"><img class="technologies img-responsive"
+                                                                            src="images/htmlcss.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h3>HTML and CSS</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <a href="https://spring.io/" target="_blank"><img class="spring img-responsive"
+                                                                              src="images/javaspring.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h3>Java Spring</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <a href="https://angularjs.org/" target="_blank"><img class="technologies img-responsive"
+                                                                                  src="images/angular.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h3>AngularJS</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-service">
+                    <div class="single-service-img">
+                        <div class="service-img">
+                            <a href="https://www.mysql.com/" target="_blank"><img class="mysql img-responsive"
+                                                                                  src="images/mysql.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h3>MySQL database</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service" style="background: gray; margin-top: 0" ng-app="totalNumberOfData"
+         ng-controller="totalNumberOfDataController"
+         cg-busy="{promise:promiseTotalNumberOfData,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2 style="color: #42b3e5">Total number of data {{totalNumberOfData}}</h2>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</section>
+
+<section class="team" id="scrollToHashtag">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Search by hashtag</h2>
+                <h4>Get number of tweets by specific hashtag</h4>
+            </div>
+        </div>
+    </div>
+    <div ng-app="searchByHashtag" ng-controller="searchByHashtagController" class="container" id="scrollToBarDiagram">
+        <div class="row">
+            <div class="team-heading text-center">
+					<span class="input input--haruki">
+					<form ng-submit="hashtagEntered()">
+                        <input class="input__field input__field--haruki" type="text" id="input-1" value="#"
+                               ng-click="addValueToTextField()" ng-model="hashtagValue" ng-blur='removeHashtagValue()'/>
+                        <label class="input__label input__label--haruki" for="input-1">
+                            <span class="input__label-content input__label-content--haruki">Enter specific hashtag</span>
+                        </label>
+                    </form>
+				</span>
+
+                <div cg-busy="{promise:promiseBarDiagram,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                    <h4 ng-show="noHashtagsEntered">Please enter some hashtags, in order for bar diagram to appear!</h4>
+                    <canvas id="myBarChart" class="chart chart-bar" chart-data="barChartData" height="300" width="400"
+                            chart-labels="barChartLabels" chart-series="barChartSeries" chart-colors="barChartColors">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service" id="scrollToDate">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Search by date</h2>
+                <h4>Get information for specific dates</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="searchByDateControllerId" ng-app="searchByDate" ng-controller="searchByDateController" class="row">
+            <div class="team-heading text-center">
+                <div class="row col-xs-4" style="margin-left: 133px;">
+                    <div class="col-sm-7">
+                        <h3>Pick start date</h3>
+
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}"
+                                   ng-model="startDate"
+                                   is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true"
+                                   close-text="Close" alt-input-formats="altInputFormats"/>
+                            <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="openStart()"><i
+                                    class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row col-xs-4">
+                    <div class="col-sm-7">
+                        <h3>Pick end date</h3>
+
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}"
+                                   ng-model="endDate"
+                                   is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"
+                                   close-text="Close" alt-input-formats="altInputFormats"/>
+                            <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="openEnd()"><i
+                                    class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row col-xs-3" id="buttonSubmitDates">
+                    <div class="col-sm-7">
+                        <h3>&nbsp;</h3>
+                        <button type="button" class="btn btn-success" ng-click="submitDates();">Submit dates
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-12" id="scrollToLineDiagram"
+                     cg-busy="{promise:promiseDateDiagram,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                    <canvas id="line" class="chart chart-line" chart-data="data" chart-colors="chartColors"
+                            chart-labels="labels" chart-series="series" chart-options="options"
+                            chart-click="chartClick" style="margin-top: 50px; margin-bottom: 30px"/>
+                </div>
+
+                <div class="col-md-12" style="margin-top: 50px" ng-show="showTable" id="scrollToTable"
+                     cg-busy="{promise:promiseTable,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th colspan="3" style="text-align: center"><h3><b>Most dominant hashtags for
+                                {{tableDate}}</b></h3>
+                                <span>Click on a hashtag to get related hastags</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="starImages"><img src="images/goldStar.png"/></td>
+                            <td class="starImages"><img src="images/silverStar.png"/></td>
+                            <td class="starImages"><img src="images/bronzeStar.png"/></td>
+                        </tr>
+                        <tr>
+                            <td class="tableRows" style="color: gold" ng-click="openRelationDiagram(hashtagOneName)">
+                                {{hashtagOneName}}
+                            </td>
+                            <td class="tableRows" style="color: silver" ng-click="openRelationDiagram(hashtagTwoName)">
+                                {{hashtagTwoName}}
+                            </td>
+                            <td class="tableRows" style="color: saddlebrown"
+                                ng-click="openRelationDiagram(hashtagThreeName)">
+                                {{hashtagThreeName}}
+                            </td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td style="color: white"><b>{{hashtagOneValue}}</b></td>
+                            <td style="color: white"><b>{{hashtagTwoValue}}</b></td>
+                            <td style="color: white"><b>{{hashtagThreeValue}}</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="center-block" ng-show="showRelationChart" style="height: 350px;"
+                         cg-busy="{promise:promiseRelationChart,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                        <h4 style="font-size: 40px">Co-occurrence hashtags</h4>
+
+                        <div id="relationshipDiagram"
+                             style="width:100%; height:177px; margin-top: 70px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team" style="padding-bottom: 0px" id="charts">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Chart</h2>
+                <h4>This chart presents most dominant languages used for tweets</h4>
+            </div>
+        </div>
+    </div>
+    <div ng-app="pieChart" ng-controller="pieChartController" class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <div cg-busy="{promise:promise,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                    <div id="myPieChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service" id="scrollToMap">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Twitter location map</h2>
+                <h4>Places where people tweet from</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div ng-app="twitterMap" ng-controller="twitterMapController" class="row"
+             cg-busy="{promise:promise,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+            <div class="team-heading text-center">
+                <button type="button" ng-show="showLoadMapButton" class="btn btn-success btn-lg btn-block"
+                        style="margin-bottom: 50px; width: 60%; margin-left: auto; margin-right: auto"
+                        ng-click="loadMap();">LOAD MAP
+                </button>
+                <h2 ng-show="locationTweetsValueShow" style="margin-top: 0; margin-bottom: -99px;">
+                    {{locationTweetsValue}}</h2>
+
+                <div ng-show="showMap" id="twitterLocationMap"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team" id="scrollToCompareHashtags">
+    <div class="container">
+        <div class="row">
+            <div class="team-heading text-center">
+                <h2>Compare Hashtags</h2>
+                <h4>Use as many hashtags as you like, and compare them</h4>
+            </div>
+        </div>
+    </div>
+    <div ng-app="compareHashtags" ng-controller="compareHashtagsController" class="container">
+        <div class="row">
+            <table class="table col-xs-5" style="margin-top: 0"
+                   cg-busy="{promise:promiseComparingHashtags,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+                <tbody>
+                <tr style="border-top: none !important;" ng-repeat="element in hashtagsArray">
+                    <td style="text-align: right; line-height: 2.428571;" class="removeBorderFromTable">Hashtag :</td>
+                    <td class="removeBorderFromTable"><input type="text" class="form-control"
+                                                             placeholder="Hashtag value"
+                                                             ng-model="element.hashtagName"></td>
+                    <td style="text-align: left; line-height: 2.428571;" class="removeBorderFromTable">
+                        <button type="button" class="btn-sm btn-primary" ng-show="showAddButton && $last"
+                                ng-click="addNewField();">New tag
+                        </button>
+                        <button type="button" class="btn-sm btn-danger" ng-show="showRemoveButton && $last-1"
+                                ng-click="removeField($index);">Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; line-height: 2.428571;" class="removeBorderFromTable">Correlation :
+                    </td>
+                    <td class="removeBorderFromTable"><select ng-model="selectedCorrelation" class="form-control">
+                        <option ng-repeat="element in arrayCorrelation" value="{{element}}">{{element}}
+                        </option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; line-height: 2.428571;" class="removeBorderFromTable">Correlation
+                        sample :
+                    </td>
+                    <td class="removeBorderFromTable"><select ng-model="selectedCorrelationSample" class="form-control">
+                        <option ng-repeat="elem in selectedCorrelationSampleArray" value="{{elem}}">{{elem}}
+                        </option>
+                    </select>
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="removeBorderFromTable"></td>
+                    <td class="removeBorderFromTable">
+                        <button type="button" class="btn btn-success col-xs-12" ng-click="compareHashtags();">
+                            Submit
+                        </button>
+                    </td>
+                    <td class="removeBorderFromTable"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+
+        <div class="panel-group" ng-show="doesNotExistArray.length > 0">
+            <div class="panel panel-danger">
+                <div class="panel-heading">Do not exist</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">There are no tweets collected with these hashtags</h3>
+
+                    <div style="text-align: center;" ng-repeat="doesNotExist in doesNotExistArray"><br/>
+
+                        <div style="text-align: center;" ng-repeat="(key, value) in doesNotExist">
+                            <h4 style="color: red; margin-bottom: 20px">{{value}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && correlationArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Correlations</div>
+                <div class="panel-body">
+                    <div style="text-align: center;" ng-repeat="correl in correlationArray">
+                        <div ng-repeat="(key, value) in correl" ng-init="loading=[]">
+                            <div style="float: right">
+                                <h4 style="font-size: 15px; margin-bottom: 15px">Show strength of correlation</h4>
+                                <button ng-click="showGaugeDiagram(value, $index); loading[$index]=check(loading[$index])"
+                                        type="button"
+                                        class="btn btn-primary" ng-show="!loading[$index]" ng-disabled="!isDisabled">
+                                    &#8681;</button>
+                                <button ng-click="showGaugeDiagram(value, $index); loading[$index]=check(loading[$index]);"
+                                        type="button"
+                                        class="btn btn-primary" ng-show="loading[$index]" ng-disabled="isDisabled">
+                                    &#8679;</button>
+                            </div>
+                            <h4 style="color: #337ab7"><b>{{key}}</b></h4>
+
+                            <div ng-attr-id="{{ 'showGaugeHere-' + $index}}" class="check-element animate-show"
+                                 ng-show="loading[$index]">
+                                <div id="gaugeDiagram"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && mostlyTweetedArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Mostly used</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">Hashtags used for tweeting mostly during hours</h3>
+
+                    <div style="text-align: center;" ng-repeat="mostlyTweeted in mostlyTweetedArray">
+                        <div style="text-align: center;" ng-repeat="(key, value) in mostlyTweeted"><br/>
+                            <h4 style="color: #337ab7; margin-bottom: 20px;"><b>{{key}} &#8680; {{value}}</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && totalNumberPerHashtagArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Number of tweets with specific hashtags</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">Total number of tweets with these hashtags</h3>
+
+                    <div style="text-align: center;" ng-repeat="totalNumber in totalNumberPerHashtagArray">
+                        <div style="text-align: center;" ng-repeat="(key, value) in totalNumber"><br/>
+                            <h4 style="color: #337ab7; margin-bottom: 20px;"><b>{{key}} &#8680; {{value}}</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && languagesArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Languages used for tweets</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">Most commonly used language for tweets plus number of tweets in that
+                        language</h3>
+
+                    <div style="text-align: center;" ng-repeat="languages in languagesArray">
+                        <div style="text-align: center;" ng-repeat="(key, value) in languages"><br/>
+                            <h4 style="color: #337ab7; margin-bottom: 20px;"><b> {{key}}</b>
+
+                                <div style="text-align: center;" ng-repeat="lang in languages">
+                                    <div style="text-align: center;" ng-repeat="l in lang">
+                                        <div style="text-align: center;" ng-repeat="(key, value) in l">
+                                            {{value}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && retweetsArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Retweets</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">Number of retweeted tweets with these hashtags</h3>
+
+                    <div style="text-align: center;" ng-repeat="retweets in retweetsArray">
+                        <div style="text-align: center;" ng-repeat="(key, value) in retweets"><br/>
+                            <h4 style="color: #337ab7; margin-bottom: 20px;"><b>{{key}} &#8680; {{value}}</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" ng-show="showCompareHashtagsResults && retweetsArray.length > 0">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Tweets with links</div>
+                <div class="panel-body">
+                    <h3 style="text-align: center;">Number of tweets containing these hashtags and links attached</h3>
+
+                    <div style="text-align: center;" ng-repeat="links in tweetsWithLinksArray">
+                        <div style="text-align: center;" ng-repeat="(key, value) in links"><br/>
+                            <h4 style="color: #337ab7; margin-bottom: 20px;"><b>{{key}} &#8680; {{value}}</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 footer-para">
+                <p>Copyright &copy; 2016 <a href="mailto:srdjanristic11@gmail.com">Srdjan Ristic</a> All rights
+                    reserved.</p>
+            </div>
+            <div class="col-xs-6 text-right">
+                <p>Data Visualization</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/relationshipDiagram/relationshipDiagram.js"></script>
+</body>
+</html>

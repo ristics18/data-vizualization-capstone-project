@@ -1,0 +1,7 @@
+com\project\controller\MainController.class
+com\project\utils\Utils.class
+com\project\entities\Tags.class
+com\project\dao\impl\TweetsDAOImpl.class
+com\project\entities\TweetsTags.class
+com\project\entities\Tweets.class
+com\project\dao\TweetsDAO.class

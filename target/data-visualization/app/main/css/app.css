@@ -1,0 +1,44 @@
+html, body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-containter {
+    padding-top: 50px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.tableRows {
+    text-align: center;
+    width: 365px;
+}
+
+.tableRows:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.center-block {
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#line:hover {
+    cursor: pointer;
+}
+
+.jumbotron {
+    /*background-color:transparent;*/
+}
+
+#submitDatesBtn {
+    margin-top: 53px;
+}
