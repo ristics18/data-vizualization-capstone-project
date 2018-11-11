@@ -1,2 +1,1 @@
-# data-vizualization-capstone-project
-Twitter data visualization
+# Twitter Data Vizualization - Capstone Project
